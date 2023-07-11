@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Forum regular";
+  src: url(/fonts/Forum_font/Forum-Regular.ttf);
+}
+@font-face {
+  font-family: "lato light";
+  src: url(/fonts/Lato_font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "lato regular";
+  src: url(/fonts/Lato_font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "lato bold";
+  src: url(/fonts/Lato_font/Lato-Bold.ttf);
+}
+.fonts_h1 {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 92.74px;
+}
+
+.fonts_h2 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26.4px;
+}
+
+.fonts_buttons_lato_14 {
+  font-family: "lato regular", sans-serif;
+  font-weight: 400;
+  line-height: 16.8px;
+  font-size: 14px;
+}
+
+.fonts_buttons_header_12 {
+  font-family: "lato regular", sans-serif;
+  font-weight: 400;
+  line-height: 14.4px;
+  font-size: 12px;
+}
+
+.fonts_header_lato {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 14.4px;
+  font-size: 12px;
+}
+
+.fonts_subheader {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  line-height: 46.37px;
+  font-size: 42px;
+}
+
+.fonts_main_text_18 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.fonts_text2Lato_22 {
+  font-family: "lato bold", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.fonts_text1Lato_16 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
