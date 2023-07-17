@@ -86,4 +86,28 @@ $color_white:#FFFFFF;
     font-size: 16px;
 }
 
+.fixed_icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    img {
+        width: 53px;
+        height: 53px;
+        &:nth-child(2) {
+            margin-top: 10px;
+        }
+    }
+}
+
+* h4 {
+    @extend .fonts_subheader;
+}
+* h1 {
+    @extend .fonts_h1;
+}
+* h2 {
+    @extend .fonts_text2Lato_22;
+}
 // @extend .tplborder; ПРИМЕР

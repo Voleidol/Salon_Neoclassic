@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "lato bold";
   src: url(/fonts/Lato_font/Lato-Bold.ttf);
 }
-.fonts_h1 {
+.fonts_h1, * h1 {
   font-family: "Forum regular", sans-serif;
   font-weight: 400;
   font-size: 84px;
@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.fonts_subheader {
+.fonts_subheader, * h4 {
   font-family: "Forum regular", sans-serif;
   font-weight: 400;
   line-height: 46.37px;
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
 }
 
-.fonts_text2Lato_22 {
+.fonts_text2Lato_22, * h2 {
   font-family: "lato bold", sans-serif;
   font-weight: 700;
   line-height: 30px;
@@ -151,6 +151,21 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 25px;
   font-size: 16px;
+}
+
+.fixed_icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.fixed_icons img {
+  width: 53px;
+  height: 53px;
+}
+.fixed_icons img:nth-child(2) {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
