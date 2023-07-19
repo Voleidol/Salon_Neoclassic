@@ -406,6 +406,10 @@ main {
     }
 
     .recall {
+        background-image: url('../images/background/back_recall.svg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        // z-index:999;
         * p {
             @extend .fonts_text2Lato_12;
         }
@@ -417,6 +421,7 @@ main {
         .head_recall {
             width: 70%;
             text-align: center;
+            padding-bottom: 30px;
             h4 {
                 padding-bottom: 30px;
                 padding-top: 60px;
@@ -424,15 +429,127 @@ main {
             p {
                 padding-bottom: 45px;
                 opacity: 0.8;
+                color: black;
             }
         }
+
         .photo_people_recall {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
+            gap: 46px;
             .slider_recall {
-                display: flex;
-                flex-direction: column;
+                &:nth-child(2) {
+                    margin-top: -70px;
+                    padding-bottom: 0;  
+                    text-align: center;
+                    p {
+                        color: $color_black;
+                        padding: 30px;
+                        padding-bottom: 5px;
+                    }
+                    div {
+                        margin-top: 20px;
+                    } 
+                }
+                
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 0px 0px 15px 0px #00000033;
+                    margin-top: 150px;
+                    padding: 20px;
+                    text-align: center;
+                    gap: 30px;
+                    h4 {
+                        color: $color_black;
+                        @extend .fonts_text2Lato_22 
+                    }
+                }
+                
+            }
+
+            
+        }
+
+        .arrow_slider_recall {
+            display: flex;
+            padding: 30px;
+            padding-bottom: 0;
+            .dot {
+                padding: 10px;
+                &:hover {
+                    background: #EDE3C8CC;
+                    border-radius: 50%;
+                    opacity: 0.6;
+                }
+            }
+            .arrow_right {
+                transform: rotate(180deg);
+                padding-right: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .arrow_left {
+                padding-right: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+            
+    }
+
+    .eskiz3D {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        .head_eskiz3D {
+            width: 70%;
+            text-align: center;
+            padding-bottom: 30px;
+            h4 {
+                padding-bottom: 30px;
+                padding-top: 60px;
+            }
+            p {
+                padding-bottom: 45px;
+                opacity: 0.8;
+                color: black;
+            }
+        }
+        .img_slider {
+            display: flex;
+            gap: 20px;
+        }
+        .eskiz3D_arrow {
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+            padding-bottom: 0;
+            .dot {
+                padding: 10px;
+                &:hover {
+                    background: #EDE3C8CC;
+                    border-radius: 50%;
+                    opacity: 0.6;
+                }
+            }
+            .arrow_right {
+                transform: rotate(180deg);
+                padding-right: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .arrow_left {
+                padding-right: 15px;
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
