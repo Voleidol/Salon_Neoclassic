@@ -135,7 +135,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF;
 }
 
-.fonts_main_text_19, .lato_light_18 {
+.fonts_interier, main .interier .stages_work h2 {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 28px;
+  color: #FFF;
+}
+
+.fonts_main_text_19, main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button, .lato_light_18 {
   font-family: "lato light", sans-serif;
   font-weight: 300;
   line-height: 30px;
@@ -156,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.fonts_text1Lato_16, .component19, .component18, .component17, .component14, .contact_block button, * a {
+.fonts_text1Lato_16, .component21, .component20, .component19, .component18, .component17, .component14, .contact_block button, * a {
   font-family: "lato light", sans-serif;
   font-weight: 300;
   line-height: 25px;
@@ -243,6 +251,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .component19:hover {
   background: linear-gradient(89.24deg, #CA9F75 0%, #F1D1B0 100%);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6980392157);
+  transition: 0.2s;
+}
+
+.component20 {
+  width: 390px;
+  padding: 16px 76px;
+  color: black;
+  background: linear-gradient(88.84deg, #E1BC94 0%, #FEEFE0 100%);
+}
+.component20:hover {
+  background: linear-gradient(88.84deg, #CBA177 0%, #F2D1B0 100%);
+  box-shadow: 0px 0px 10px 0px rgba(234, 213, 193, 0.2509803922);
+  transition: 0.2s;
+}
+
+.component21 {
+  width: 390px;
+  padding: 16px 76px;
+  color: black;
+  background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
+}
+.component21:hover {
+  background: linear-gradient(89.24deg, #CBA177 0%, #EFCDAC 100%);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6980392157);
   transition: 0.2s;
 }
@@ -581,35 +613,234 @@ main .eskiz3D .eskiz3D_arrow .arrow_left:hover {
   cursor: pointer;
 }
 main .calculate_cost_window {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 main .calculate_cost_window .calculate_cost_window_shadow {
-  width: 70%;
+  width: 100%;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
   padding: 30px;
   background-image: url("../images/background/back_calc.svg");
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .calculate_cost_window .calculate_cost_window_shadow div {
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz, main .calculate_cost_window .calculate_cost_window_shadow .length_window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button {
+  background: none;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button:hover {
+  color: #BBA76A;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul {
+  display: inline-block;
+  color: #979797;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul li, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul li, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul li, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul li {
+  list-style: inside;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan div, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain div, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz div, main .calculate_cost_window .calculate_cost_window_shadow .length_window div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .calculate_cost_window .calculate_cost_window_shadow h4 {
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan h4, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain h4, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz h4, main .calculate_cost_window .calculate_cost_window_shadow .length_window h4 {
   color: #000000;
   border: 1px solid #DAC891;
   background-color: #FFFFFF;
   border-radius: 50%;
-  padding: 10px 25px;
+  padding: 12px 25px;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span {
+  font-weight: 400;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie {
+  color: #979797;
+  border-bottom: 1px solid #979797;
+  padding-bottom: 2px;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ruler {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #BBA76A;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ruler span {
+  color: #979797;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ruler span:hover {
+  cursor: pointer;
+  color: #000000;
+}
+main .calculate_cost_window .calculate_cost_window_shadow .calculate_button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+main .interier {
+  width: 100%;
+  background: linear-gradient(167.26deg, #050B0B 0%, #0F2D23 50.26%, #050B0B 100%);
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .interier .interier_block {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+main .interier .interier_block h4 {
+  padding: 64px;
+  padding-bottom: 0;
+}
+main .interier .interier_block p {
+  opacity: 0.8;
+}
+main .interier .stages_work {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .interier .stages_work h2 {
+  opacity: 0.8;
+}
+main .interier .stages_work p {
+  opacity: 0.6;
+}
+main .interier .stages_work .stages_work_img_flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+main .interier .stages_work .stages_work_img_flex .img {
+  display: flex;
+  justify-content: flex-start;
+}
+main .interier .stages_work .stages_work_img_flex img {
+  border-bottom: 1px solid #FFE4B5;
+}
+main .interier .stages_work .stages_work_img_flex .stages_work_img_left, main .interier .stages_work .stages_work_img_flex .stages_work_img_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  gap: 30px;
+}
+main .interier .stages_work .stages_work_img_flex .stages_work_img_block_text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-top: 30px;
+}
+main .interier .stages_work .stages_work_img_flex .stages_work_img_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+main .interier .stages_work .stages_work_img_flex .stages_work_img_right_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .interier .stages_work .stock {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 90px;
+}
+main .interier .stages_work .stock h4 {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+main .project_season {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 53px;
+  gap: 45px;
+  background-image: url("../images/background/back_project_season.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .project_season p {
+  color: #000000;
+  opacity: 0.8;
+}
+main .project_season .project_season_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+}
+main .project_season .project_season_block h4 {
+  padding-bottom: 30px;
+}
+main .project_season .project_season_img {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+main .project_season .partners {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .project_season .partners h4 {
+  padding-bottom: 27px;
+}
+main .project_season .partners .partners_img_blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .project_season .partners .partners_img_blocks div {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 52px;
+}
+main .project_season .partners .partners_img_blocks .partners_img_blocks_partnersImg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */
