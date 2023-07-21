@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF;
 }
 
-.fonts_main_text_19, main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button, .lato_light_18 {
+.fonts_main_text_19, footer .footer_wrapper .footer_menu .footer_menu_leftBlock span, footer .footer_wrapper .footer_menu .footer_menu_rightBlock span, main .project_season .form .form_block form div input::placeholder, main .project_season .form .form_block form div span, main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button, .lato_light_18 {
   font-family: "lato light", sans-serif;
   font-weight: 300;
   line-height: 30px;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 
-.fonts_text1Lato_16, .component21, .component20, .component19, .component18, .component17, .component14, .contact_block button, * a {
+.fonts_text1Lato_16, .component22, .component21, .component20, .component19, .component18, .component17, .component14, .contact_block button, * a {
   font-family: "lato light", sans-serif;
   font-weight: 300;
   line-height: 25px;
@@ -266,6 +266,9 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 10px 0px rgba(234, 213, 193, 0.2509803922);
   transition: 0.2s;
 }
+.component20 a {
+  color: #000000;
+}
 
 .component21 {
   width: 390px;
@@ -276,6 +279,18 @@ h1, h2, h3, h4, h5, h6 {
 .component21:hover {
   background: linear-gradient(89.24deg, #CBA177 0%, #EFCDAC 100%);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6980392157);
+  transition: 0.2s;
+}
+
+.component22 {
+  width: 390px;
+  padding: 16px 76px;
+  color: black;
+  background: linear-gradient(89.34deg, #E0B88F -2.95%, #FFF3E7 107.46%);
+}
+.component22:hover {
+  background: linear-gradient(89.24deg, #CA9F75 0%, #F1D1B0 100%);
+  box-shadow: 0px 0px 10px 0px #EAD5C1;
   transition: 0.2s;
 }
 
@@ -379,10 +394,8 @@ main .portfolio .portfolio_img {
   z-index: 998;
   padding-bottom: 45px;
 }
-main .portfolio .portfolio_button button:hover {
-  background: linear-gradient(89.24deg, #CA9F75 0%, #F1D1B0 100%);
-  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6980392157);
-  transition: 0.2s;
+main .portfolio .portfolio_button {
+  z-index: 999;
 }
 main .portfolio .portfolio_button button:nth-child(2) {
   margin-left: 20px;
@@ -628,7 +641,7 @@ main .calculate_cost_window .calculate_cost_window_shadow {
   align-items: center;
   gap: 30px;
   padding: 30px;
-  background-image: url("../images/background/back_calc.svg");
+  background-image: url("../images/background/back_calc22.svg");
   background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
@@ -818,6 +831,63 @@ main .project_season .project_season_img {
   flex-direction: row;
   gap: 36px;
 }
+main .project_season .form {
+  width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .project_season .form .form_block {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .project_season .form .form_block .form_block_head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+main .project_season .form .form_block .form_block_head p {
+  color: #000000;
+  opacity: 0.8;
+}
+main .project_season .form .form_block form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .project_season .form .form_block form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .project_season .form .form_block form div span {
+  padding-top: 30px;
+  font-weight: 400;
+}
+main .project_season .form .form_block form div #firstElem {
+  padding-top: 0;
+}
+main .project_season .form .form_block form div input {
+  width: 390px;
+  height: 63px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  margin-top: 15px;
+}
+main .project_season .form .form_block form div input::placeholder {
+  font-weight: 400;
+  opacity: 0.8;
+  padding-left: 16px;
+}
+main .project_season .form .form_block form button {
+  margin-top: 45px;
+}
 main .project_season .partners {
   width: 70%;
   display: flex;
@@ -831,6 +901,7 @@ main .project_season .partners .partners_img_blocks {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 main .project_season .partners .partners_img_blocks div {
   display: flex;
@@ -838,9 +909,96 @@ main .project_season .partners .partners_img_blocks div {
   padding-bottom: 52px;
 }
 main .project_season .partners .partners_img_blocks .partners_img_blocks_partnersImg {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+main .project_season .partners .partners_img_blocks .partners_img_blocks_partnersImg .partners_img_blocks_partnersImg_flex {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(167.26deg, #050B0B 0%, #0F2D23 50.26%, #050B0B 100%);
+  z-index: 997;
+}
+footer .backFoot {
+  position: absolute;
+  background-image: url("../images/background/back_footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 998;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+footer .footer_wrapper {
+  width: 70%;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+footer .footer_wrapper .subhead {
+  padding-bottom: 45px;
+}
+footer .footer_wrapper .footer_map {
+  padding-bottom: 20px;
+}
+footer .footer_wrapper .footer_contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+footer .footer_wrapper .footer_contact .footer_contact_text p {
+  opacity: 1;
+}
+footer .footer_wrapper .footer_contact .footer_contact_text p span {
+  opacity: 0.8;
+}
+footer .footer_wrapper .footer_contact .footer_contact_text p span a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+footer .footer_wrapper .footer_icons {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+}
+footer .footer_wrapper .footer_icons:hover {
+  cursor: pointer;
+}
+footer .footer_wrapper .footer_menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+footer .footer_wrapper .footer_menu .footer_menu_leftBlock, footer .footer_wrapper .footer_menu .footer_menu_rightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+footer .footer_wrapper .footer_menu .footer_menu_leftBlock span, footer .footer_wrapper .footer_menu .footer_menu_rightBlock span {
+  opacity: 0.8;
+}
+footer .footer_wrapper .footer_menu .footer_menu_leftBlock span:hover, footer .footer_wrapper .footer_menu .footer_menu_rightBlock span:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */
