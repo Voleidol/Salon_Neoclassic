@@ -480,6 +480,9 @@ main .slide_o_nas .slide_o_nas_block .calc_block {
   padding-bottom: 77px;
   z-index: 998;
 }
+main .slide_o_nas .slide_o_nas_block .calc_block a {
+  color: #000000;
+}
 main .slide_o_nas .slide_o_nas_block .calc_block .head_calc_block {
   width: 70%;
   text-align: center;
@@ -991,6 +994,7 @@ footer .footer_wrapper .footer_menu .footer_menu_leftBlock, footer .footer_wrapp
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 15px;
 }
 footer .footer_wrapper .footer_menu .footer_menu_leftBlock span, footer .footer_wrapper .footer_menu .footer_menu_rightBlock span {

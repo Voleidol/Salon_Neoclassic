@@ -437,6 +437,10 @@ main {
                 align-items: center;
                 padding-bottom: 77px;
                 z-index: 998;
+
+                a {
+                    color: $color_black;
+                }
                 
                 .head_calc_block {
                     width: 70%;
@@ -1012,6 +1016,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
                 gap: 15px;
                 span {
                     @extend .fonts_main_text_19;

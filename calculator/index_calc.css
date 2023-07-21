@@ -1,0 +1,353 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Forum regular";
+  src: url(/fonts/Forum_font/Forum-Regular.ttf);
+}
+@font-face {
+  font-family: "lato light";
+  src: url(/fonts/Lato_font/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "lato regular";
+  src: url(/fonts/Lato_font/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "lato bold";
+  src: url(/fonts/Lato_font/Lato-Bold.ttf);
+}
+.fonts_h1 {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 92.74px;
+  color: #FFEDCC;
+}
+
+.forum400 {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 54.1px;
+  color: black;
+}
+
+.fonts_h2 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26.4px;
+  color: #FFEDCC;
+}
+
+.fonts_buttons_lato_14 {
+  font-family: "lato regular", sans-serif;
+  font-weight: 400;
+  line-height: 16.8px;
+  font-size: 14px;
+}
+
+.fonts_buttons_header_12 {
+  font-family: "lato regular", sans-serif;
+  font-weight: 400;
+  line-height: 14.4px;
+  font-size: 12px;
+}
+
+.fonts_header_lato {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 14.4px;
+  font-size: 12px;
+}
+
+.fonts_subheader, .subhead {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  line-height: 46.37px;
+  font-size: 42px;
+  color: #FFF;
+}
+
+.fonts_interier {
+  font-family: "Forum regular", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 28px;
+  color: #FFF;
+}
+
+.fonts_main_text_19, s footer .form form div input::placeholder, footer .form form div input, footer .form form div span, .lato_light_18 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 19px;
+}
+
+.latoLight {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 19px;
+  opacity: 0.8;
+}
+
+.fonts_text2Lato_22 {
+  font-family: "lato bold", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.fonts_text2Lato_12 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.fonts_text1Lato_16, .btn, .component22 {
+  font-family: "lato light", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.component22 {
+  width: 390px;
+  padding: 16px 76px;
+  color: black;
+  background: linear-gradient(89.34deg, #E0B88F -2.95%, #FFF3E7 107.46%);
+}
+.component22:hover {
+  background: linear-gradient(89.24deg, #CA9F75 0%, #F1D1B0 100%);
+  box-shadow: 0px 0px 10px 0px #EAD5C1;
+  transition: 0.2s;
+}
+
+.btn {
+  width: 390px;
+  padding: 16px 76px;
+  color: black;
+  background: linear-gradient(88.84deg, #E1BC94 0%, #FEEFE0 100%);
+}
+.btn:hover {
+  background: linear-gradient(88.84deg, #CBA177 0%, #F2D1B0 100%);
+  box-shadow: 0px 0px 10px 0px rgba(234, 213, 193, 0.2509803922);
+  transition: 0.2s;
+}
+.btn a {
+  color: black;
+}
+
+.subhead {
+  color: #DAC891;
+  padding-bottom: 45px;
+  padding-top: 15px;
+}
+
+.lato_light_18 {
+  color: #FFFFFF;
+}
+
+.wrapper_calc {
+  width: 100%;
+  padding: 100px;
+}
+.wrapper_calc .type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.wrapper_calc .type .type_flex_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 45px;
+}
+.wrapper_calc .type .type_flex_row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.wrapper_calc .type .type_flex_row div:hover {
+  color: #DAC891;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrapper_calc .window_kol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper_calc .window_kol .window_span {
+  display: flex;
+  gap: 60px;
+  padding: 60px;
+}
+.wrapper_calc .window_kol .window_span span:hover {
+  color: #DAC891;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.wrapper_calc .window_kol .window_kol_btn {
+  display: flex;
+  gap: 20px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(157.62deg, #070D0D 0%, #0F2B21 48.44%, #08100F 100%);
+  z-index: 997;
+}
+footer .wrapper_foot {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+}
+footer .back_foot {
+  position: absolute;
+  right: 0;
+  background-image: url("../calculator/images/back_foot.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 998;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+footer .form {
+  width: 70%;
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  z-index: 999;
+}
+footer .form p {
+  color: white;
+  opacity: 0.8;
+}
+footer .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+footer .form form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .form form div span {
+  padding-top: 30px;
+  font-weight: 400;
+  color: white;
+}
+footer .form form div #firstElem {
+  padding-top: 0;
+}
+footer .form form div input {
+  width: 390px;
+  height: 63px;
+  background: white;
+  border: 1px solid black;
+  margin-top: 15px;
+  font-weight: 400;
+}
+s footer .form form div input::placeholder {
+  font-weight: 400;
+  opacity: 0.8;
+  padding-left: 16px;
+}
+footer .form form button {
+  margin-top: 45px;
+}
+
+/*# sourceMappingURL=index_calc.css.map */
