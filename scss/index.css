@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fonts_subheader, .subhead, * h4 {
-  font-family: "Forum regular", sans-serif;
+  font-family: "Forum", cursive;
   font-weight: 400;
   line-height: 46.37px;
   font-size: 42px;
@@ -165,10 +165,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fonts_text1Lato_16, .component22, .component21, .component20, .component19, .component18, .component17, .component14, .contact_block button, * a {
-  font-family: "lato light", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
   font-size: 16px;
+  opacity: 0.9;
 }
 
 .fixed_icons {
@@ -196,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .component16 {
   width: 390px;
-  padding: 22px 76px;
+  padding: 22px 60px;
   color: black;
   opacity: 0.9;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
