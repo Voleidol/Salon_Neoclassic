@@ -91,26 +91,33 @@ h1, h2, h3, h4, h5, h6 {
   src: url(/fonts/Lato_font/Lato-Bold.ttf);
 }
 .fonts_h1, * h1 {
-  font-family: "Forum regular", sans-serif;
+  font-family: "Forum", cursive;
+  font-style: normal;
   font-weight: 400;
-  font-size: 84px;
-  line-height: 92.74px;
+  font-size: 80px;
+  line-height: 88px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
   color: #FFEDCC;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .fonts_h2, * h2 {
-  font-family: "lato light", sans-serif;
+  font-family: "Forum", cursive;
   font-weight: 300;
-  font-size: 22px;
-  line-height: 26.4px;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0;
   color: #FFEDCC;
 }
 
 .fonts_buttons_lato_14, .component16 {
-  font-family: "lato regular", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 16.8px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .fonts_buttons_header_12 {
@@ -136,41 +143,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fonts_interier, main .interier .stages_work h2 {
-  font-family: "Forum regular", sans-serif;
+  font-family: "Forum", sans-serif;
+  font-style: normal;
   font-weight: 400;
-  line-height: 40px;
   font-size: 28px;
-  color: #FFF;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-.fonts_main_text_19, footer .footer_wrapper .footer_menu .footer_menu_leftBlock span, footer .footer_wrapper .footer_menu .footer_menu_rightBlock span, main .project_season .form .form_block form div input::placeholder, main .project_season .form .form_block form div span, main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button, .lato_light_18 {
-  font-family: "lato light", sans-serif;
+.fonts_main_text_19, main .project_season .form .form_block form div input::placeholder, main .project_season .form .form_block form div span, main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .ul, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ul, main .calculate_cost_window .calculate_cost_window_shadow .length_window .ul, main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button, .lato_light_18 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
   font-weight: 300;
-  line-height: 30px;
   font-size: 19px;
+  line-height: 32px;
+  color: #FFFFFF;
+  opacity: 0.8;
 }
 
 .fonts_text2Lato_22, main .recall .photo_people_recall .slider_recall div h4 {
-  font-family: "lato bold", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   line-height: 30px;
   font-size: 22px;
 }
 
-.fonts_text2Lato_12, main .recall * p {
-  font-family: "lato light", sans-serif;
+.fonts_text2Lato_12 {
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 20px;
   font-size: 12px;
 }
 
 .fonts_text1Lato_16, .component22, .component21, .component20, .component19, .component18, .component17, .component14, .contact_block button, * a {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
+  width: 219px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
-  font-size: 16px;
-  opacity: 0.9;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .fixed_icons {
@@ -198,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .component16 {
   width: 390px;
-  padding: 22px 60px;
+  padding: 22px 40px;
   color: black;
   opacity: 0.9;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
@@ -211,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .component14 {
   width: 390px;
-  padding: 16px 76px;
+  padding: 16px 15px;
   color: black;
   background: linear-gradient(89.34deg, #E0B88F -2.95%, #FFF3E7 107.46%);
 }
@@ -224,6 +241,7 @@ h1, h2, h3, h4, h5, h6 {
 .component17 {
   width: 390px;
   padding: 16px 76px;
+  padding: 25px;
   color: black;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
 }
@@ -236,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 .component18 {
   width: 390px;
   padding: 16px 76px;
+  padding: 25px;
   color: black;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
 }
@@ -248,6 +267,7 @@ h1, h2, h3, h4, h5, h6 {
 .component19 {
   width: 390px;
   padding: 16px 76px;
+  padding: 25px;
   color: black;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
 }
@@ -274,7 +294,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .component21 {
   width: 390px;
-  padding: 16px 76px;
+  padding: 16px 15px;
+  padding: 25px;
   color: black;
   background: linear-gradient(89.34deg, rgba(224, 184, 143, 0.7) -2.95%, rgba(255, 243, 231, 0.7) 107.46%);
 }
@@ -304,6 +325,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.slider_recall_h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+}
+
 header {
   width: 100%;
 }
@@ -312,18 +342,29 @@ header nav {
   padding: 20px 38px;
   padding-top: 22px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #FFFFFF;
 }
 header nav .navigation {
-  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
+  text-align: center;
 }
 header nav .navigation a {
+  opacity: 0.8;
   text-decoration: none;
   color: #000000;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+}
+header nav .navigation a:first-child {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header .main_header {
   width: 100%;
@@ -357,6 +398,7 @@ main .portfolio {
   position: relative;
   background: linear-gradient(166.74deg, #010805 0%, #102F24 45.8%, #010805 73.35%);
   display: flex;
+  z-index: 998;
   flex-direction: column;
   align-items: center;
 }
@@ -380,18 +422,19 @@ main .portfolio .portfolio_img .portfolio_img_flex .portfolio_img_flex2 {
 main .portfolio .portfolio_img .portfolio_img_flex:nth-child(2) {
   margin-top: 39px;
 }
+main .portfolio h4 {
+  padding-bottom: 30px;
+  padding-top: 60px;
+  z-index: 999;
+}
 main .portfolio .head_portfolio {
   width: 70%;
   text-align: center;
   z-index: 999;
-}
-main .portfolio .head_portfolio h4 {
-  padding-bottom: 30px;
-  padding-top: 60px;
+  opacity: 0.8;
 }
 main .portfolio .head_portfolio p {
   padding-bottom: 45px;
-  opacity: 0.8;
 }
 main .portfolio .portfolio_img {
   z-index: 998;
@@ -422,17 +465,18 @@ main .slide_o_nas .slide_o_nas_block .back_slide_o_nas {
   background-repeat: no-repeat;
   background-size: cover;
 }
+main .slide_o_nas .slide_o_nas_block h4 {
+  padding-bottom: 30px;
+  padding-top: 60px;
+  z-index: 999;
+}
 main .slide_o_nas .slide_o_nas_block .head_o_nas {
   width: 70%;
   text-align: center;
-}
-main .slide_o_nas .slide_o_nas_block .head_o_nas h4 {
-  padding-bottom: 30px;
-  padding-top: 60px;
+  opacity: 0.8;
 }
 main .slide_o_nas .slide_o_nas_block .head_o_nas p {
   padding-bottom: 45px;
-  opacity: 0.8;
 }
 main .slide_o_nas .slide_o_nas_block .slider_block {
   z-index: 998;
@@ -486,17 +530,17 @@ main .slide_o_nas .slide_o_nas_block .calc_block {
 main .slide_o_nas .slide_o_nas_block .calc_block a {
   color: #000000;
 }
-main .slide_o_nas .slide_o_nas_block .calc_block .head_calc_block {
-  width: 70%;
-  text-align: center;
-}
-main .slide_o_nas .slide_o_nas_block .calc_block .head_calc_block h4 {
+main .slide_o_nas .slide_o_nas_block .calc_block h4 {
   padding-bottom: 30px;
   padding-top: 60px;
 }
+main .slide_o_nas .slide_o_nas_block .calc_block .head_calc_block {
+  width: 70%;
+  text-align: center;
+  opacity: 0.8;
+}
 main .slide_o_nas .slide_o_nas_block .calc_block .head_calc_block p {
   padding-bottom: 45px;
-  opacity: 0.8;
 }
 main .recall {
   background-image: url("../images/background/back_recall.svg");
@@ -511,7 +555,8 @@ main .recall {
 main .recall .head_recall {
   width: 70%;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 120px;
+  opacity: 0.8;
 }
 main .recall .head_recall h4 {
   padding-bottom: 30px;
@@ -519,7 +564,6 @@ main .recall .head_recall h4 {
 }
 main .recall .head_recall p {
   padding-bottom: 45px;
-  opacity: 0.8;
   color: black;
 }
 main .recall .photo_people_recall {
@@ -527,8 +571,15 @@ main .recall .photo_people_recall {
   justify-content: space-between;
   gap: 46px;
 }
+main .recall .photo_people_recall .slider_recall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  margin-top: -135px;
+}
 main .recall .photo_people_recall .slider_recall:nth-child(2) {
-  margin-top: -70px;
+  margin-top: -125px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -539,6 +590,8 @@ main .recall .photo_people_recall .slider_recall:nth-child(2) p {
 }
 main .recall .photo_people_recall .slider_recall:nth-child(2) div {
   margin-top: 20px;
+  padding: 70px;
+  padding-bottom: 0;
 }
 main .recall .photo_people_recall .slider_recall div {
   display: flex;
@@ -549,6 +602,9 @@ main .recall .photo_people_recall .slider_recall div {
   padding: 20px;
   text-align: center;
   gap: 30px;
+}
+main .recall .photo_people_recall .slider_recall div p {
+  color: #000000;
 }
 main .recall .photo_people_recall .slider_recall div h4 {
   color: #000000;
@@ -586,18 +642,18 @@ main .eskiz3D {
   flex-direction: column;
   align-items: center;
 }
+main .eskiz3D h4 {
+  padding-bottom: 30px;
+  padding-top: 60px;
+}
 main .eskiz3D .head_eskiz3D {
   width: 70%;
   text-align: center;
   padding-bottom: 30px;
-}
-main .eskiz3D .head_eskiz3D h4 {
-  padding-bottom: 30px;
-  padding-top: 60px;
+  opacity: 0.8;
 }
 main .eskiz3D .head_eskiz3D p {
   padding-bottom: 45px;
-  opacity: 0.8;
   color: black;
 }
 main .eskiz3D .img_slider {
@@ -659,13 +715,15 @@ main .calculate_cost_window .calculate_cost_window_shadow .class_tkan, main .cal
   gap: 30px;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block {
-  width: 100%;
+  width: 25rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: center;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button {
   background: none;
+  color: #000000;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .class_tkan .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .class_tkan_block button:hover, main .calculate_cost_window .calculate_cost_window_shadow .length_window .class_tkan_block button:hover {
   color: #BBA76A;
@@ -690,7 +748,13 @@ main .calculate_cost_window .calculate_cost_window_shadow .class_tkan h4, main .
   padding: 12px 25px;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .class_tkan span, main .calculate_cost_window .calculate_cost_window_shadow .type_curtain span, main .calculate_cost_window .calculate_cost_window_shadow .length_karniz span, main .calculate_cost_window .calculate_cost_window_shadow .length_window span {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  text-align: center;
+  color: #000000;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .length_window .znchenie {
   color: #979797;
@@ -701,7 +765,7 @@ main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ruler 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 25rem;
   border-bottom: 1px solid #BBA76A;
 }
 main .calculate_cost_window .calculate_cost_window_shadow .length_karniz .ruler span {
@@ -734,12 +798,9 @@ main .interier .interier_block {
   text-align: center;
   gap: 30px;
 }
-main .interier .interier_block h4 {
+main .interier .interier_block .interier_block_head h4 {
   padding: 64px;
-  padding-bottom: 0;
-}
-main .interier .interier_block p {
-  opacity: 0.8;
+  padding-bottom: 30px;
 }
 main .interier .stages_work {
   width: 100%;
@@ -760,7 +821,7 @@ main .interier .stages_work .stages_work_img_flex {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 70%;
 }
 main .interier .stages_work .stages_work_img_flex .img {
   display: flex;
@@ -769,15 +830,16 @@ main .interier .stages_work .stages_work_img_flex .img {
 main .interier .stages_work .stages_work_img_flex img {
   border-bottom: 1px solid #FFE4B5;
 }
-main .interier .stages_work .stages_work_img_flex .stages_work_img_left, main .interier .stages_work .stages_work_img_flex .stages_work_img_right {
+main .interier .stages_work .stages_work_img_flex .stages_work_img_left_block, main .interier .stages_work .stages_work_img_flex .stages_work_img_right_block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   width: 50%;
   gap: 30px;
 }
 main .interier .stages_work .stages_work_img_flex .stages_work_img_block_text {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -800,12 +862,11 @@ main .interier .stages_work .stock {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   padding-bottom: 90px;
 }
 main .interier .stages_work .stock h4 {
   padding-top: 60px;
-  padding-bottom: 30px;
 }
 main .project_season {
   width: 100%;
@@ -828,6 +889,7 @@ main .project_season .project_season_block {
   align-items: center;
   text-align: center;
   width: 70%;
+  opacity: 0.8;
 }
 main .project_season .project_season_block h4 {
   padding-bottom: 30px;
@@ -857,10 +919,10 @@ main .project_season .form .form_block .form_block_head {
   align-items: center;
   text-align: center;
   gap: 30px;
+  opacity: 0.8;
 }
 main .project_season .form .form_block .form_block_head p {
   color: #000000;
-  opacity: 0.8;
 }
 main .project_season .form .form_block form {
   display: flex;
@@ -875,6 +937,7 @@ main .project_season .form .form_block form div {
 main .project_season .form .form_block form div span {
   padding-top: 30px;
   font-weight: 400;
+  color: #000000;
 }
 main .project_season .form .form_block form div #firstElem {
   padding-top: 0;
@@ -890,6 +953,7 @@ main .project_season .form .form_block form div input::placeholder {
   font-weight: 400;
   opacity: 0.8;
   padding-left: 16px;
+  color: #000000;
 }
 main .project_season .form .form_block form button {
   margin-top: 45px;
@@ -987,7 +1051,7 @@ footer .footer_wrapper .footer_icons:hover {
   cursor: pointer;
 }
 footer .footer_wrapper .footer_menu {
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -27,13 +27,16 @@
     line-height: 92.74px;
     color: #FFEDCC;
 }
+
 .forum400 {
-    font-family: 'Forum regular', sans-serif;
+    font-family: 'Forum';
+    font-style: normal;
     font-weight: 400;
     font-size: 49px;
-    line-height: 54.1px;
-    color: black;
+    line-height: 54px;
+    color: #000000;
 }
+
 .fonts_h2 {
     font-family: 'lato light', sans-serif;
     font-weight: 300;
@@ -60,11 +63,12 @@
     font-size: 12px;
 }
 .fonts_subheader {
-    font-family: 'Forum regular', sans-serif;
+    font-family: 'Forum', cursive;
+    font-style: normal;
     font-weight: 400;
-    line-height: 46.37px;
     font-size: 42px;
-    color:#FFF;
+    line-height: 46px;
+    color: #DAC891;
 }
 .fonts_interier {
     font-family: 'Forum regular', sans-serif;
@@ -74,16 +78,21 @@
     color:#FFF;
 }
 .fonts_main_text_19 {
-    font-family: 'lato light', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
     font-weight: 300;
-    line-height: 30px;
     font-size: 19px;
+    line-height: 32px;
+    color: #FFFFFF;
+    opacity: 0.8;
 }
 .latoLight {
-    font-family: 'lato light', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
     font-weight: 300;
-    line-height: 30px;
     font-size: 19px;
+    line-height: 32px;
+    color: #000;
     opacity: 0.8;
 }
 .fonts_text2Lato_22 {
@@ -99,10 +108,16 @@
     font-size: 12px;
 }
 .fonts_text1Lato_16 {
-    font-family: 'lato light', sans-serif;
-    font-weight: 300;
-    line-height: 25px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .component22 {
@@ -123,7 +138,16 @@
     padding: 16px 76px;
     color:black;
     background: linear-gradient(88.84deg, #E1BC94 0%, #FEEFE0 100%);
-    @extend .fonts_text1Lato_16;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
     &:hover {
         background: linear-gradient(88.84deg, #CBA177 0%, #F2D1B0 100%);
         box-shadow: 0px 0px 10px 0px #EAD5C140;
@@ -149,6 +173,7 @@
 .wrapper_calc {
     width: 100%;
     padding: 100px;
+    padding-top: 50px;
     .type {
         display: flex;
         flex-direction: column;
@@ -179,6 +204,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .subhead {
+            padding-bottom: 0;
+        }
         .window_span {
             display: flex;
             gap: 60px;
@@ -263,12 +291,15 @@ footer {
                     border: 1px solid black;
                     margin-top: 15px;
                     @extend .fonts_main_text_19;
-                    font-weight: 400;s
+                    font-weight: 400;
+                    color: #000;
+                    opacity: 1;
                     &::placeholder {
                         @extend .fonts_main_text_19;
                         font-weight: 400;
                         opacity: 0.8;
                         padding-left: 16px;
+                        color: #000;
                     }
                 }
 
