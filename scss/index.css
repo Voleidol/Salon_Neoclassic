@@ -383,6 +383,7 @@ main .portfolio .portfolio_img .portfolio_img_flex:nth-child(2) {
 main .portfolio .head_portfolio {
   width: 70%;
   text-align: center;
+  z-index: 999;
 }
 main .portfolio .head_portfolio h4 {
   padding-bottom: 30px;
