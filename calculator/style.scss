@@ -172,18 +172,21 @@
 
 .wrapper_calc {
     width: 100%;
-    padding: 100px;
+    padding: 50px;
     padding-top: 50px;
     .type {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         align-items: center;
         text-align: center;
         
         .type_flex_row {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 20px;
             padding-bottom: 45px;
             div {
@@ -307,6 +310,189 @@ footer {
             }
             button {
                 margin-top: 45px;  
+            }
+        }
+    }
+}
+
+// МОБИЛЬНАЯ ВЕРСИЯ 
+
+@media screen and (max-width: 586px) {
+    .subhead {
+        color: #DAC891;
+        @extend .fonts_subheader;
+        padding-bottom: 24px;
+        padding-top: 60px;
+    }
+    .wrapper_calc {
+        width: 100%;
+        padding: 20px;
+        * h4 {
+            font-size: 24px;
+        }
+        .type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            .type_flex_row {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    img {
+                        width: 10rem;
+                        height: 7rem;
+                    }
+                    &:hover {
+                        color: #DAC891;
+                        cursor: pointer;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+
+        .window_kol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .subhead {
+                padding-bottom: 0;
+            }
+
+            .window_span {
+                display: flex;
+                gap: 30px;
+                padding: 24px;
+                span:hover {
+                    color: #DAC891;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    font-size: 24px;
+                }
+            }
+
+            .window_kol_btn {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    footer {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(157.62deg, #070D0D 0%, #0F2B21 48.44%, #08100F 100%);
+        z-index: 997;
+        
+        .wrapper_foot {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 32px;
+        }
+        .back_foot {
+            position: absolute;
+            right: 0;
+            background-image: url('../calculator/images/back_foot_mobile.svg');
+            background-repeat:no-repeat;
+            background-size: cover;
+            z-index: 998;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+        .form {
+            width: 90%;
+            padding-top: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            text-align: center;
+            z-index: 999;
+            .subhead {
+                font-size: 24px;
+                padding-bottom: 0px;
+                padding-top: 15px;
+            }
+            
+            .latoLight {
+                font-size: 14px;
+                padding: 0;
+            }
+            p {
+                color: white;
+                opacity: 0.8;
+            }
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 999;
+                div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    span {
+                        padding-top: 14px;
+                        @extend .fonts_main_text_19;
+                        font-weight: 400;
+                        color: white;
+                        font-size: 14px;
+                    }
+                    #firstElem {
+                        padding-top: 0;
+                    }
+                    input {
+                        width: 100%;
+                        height: 63px;
+                        background:white;
+                        border: 1px solid black;
+                        margin-top: 12px;
+                        @extend .fonts_main_text_19;
+                        font-weight: 400;
+                        color: #000;
+                        opacity: 1;
+                        &::placeholder {
+                            @extend .fonts_main_text_19;
+                            font-weight: 400;
+                            opacity: 0.8;
+                            padding-left: 16px;
+                            color: #000;
+                            font-size: 14px;
+                        }
+                    }
+                    
+                }
+                button {
+                    width: 100%;
+                    font-size: 12px;
+                    margin-top: 45px;
+                    padding: 20px 15px;
+
+                }
             }
         }
     }
