@@ -294,7 +294,12 @@ $color_white:#FFFFFF;
 
 header {
     width: 100%;
-    nav {
+
+    .mobileNav {
+        display: none;
+    }
+
+    .desctopNav {
         width: 100%;
         padding: 20px 38px;
         padding-top: 22px;
@@ -354,6 +359,9 @@ header {
             }
             div {
                 padding-bottom: 103px;  
+                .mobileCall {
+                    display: none;
+                }
             }
         }
     }
@@ -1118,9 +1126,37 @@ footer {
 
 @media screen and (max-width: 586px) {
     header {
-        nav {
-            display: none !important;
+
+        .desctopNav {
+            display: none;
         }
+    
+        .mobileNav {
+            display: block;
+            .navigation {
+                display: flex;
+                justify-content: space-between;
+                padding: 9px 12px;
+                a {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 19px;
+                    letter-spacing: 0.1em;
+                }
+                span {
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 19px;
+                    letter-spacing: 0.1em;
+                }
+            }
+            
+        }
+
         .main_header {
             width: 100%;
             height: 100%;
@@ -1133,6 +1169,8 @@ footer {
                 .burgerImg { 
                     display: block;
                     position: absolute;
+                    width: 40px;
+                    height: 40px;
                     right: 20px;
                     top: 20px;
                     svg {
@@ -1143,9 +1181,9 @@ footer {
                 .logo {
                     width: 100%;
                     padding-top: 118px;
-                    padding-bottom: 75px;
                     svg {
                         width: 100%;
+                        height: 19.375rem;
                     }
                 }
                 h1 {
@@ -1155,26 +1193,60 @@ footer {
                     -webkit-text-stroke: 0px #FFEDCC;
                 }
                 h2 {
-                    font-family: 'Forum';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 48px;
-                    line-height: 60px;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    letter-spacing: 0.05em;
-                    color: #FFEDCC;
-                    text-shadow: none;
-                    -webkit-text-stroke: 0px #FFEDCC;
-                    opacity: 0.8;
+                    font-size: 16px;
+                    padding-top: 0;
                 }
                 div {
+                    width: 100%;
                     padding-bottom: 36px;  
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .mobileCall {
+                        display: block;
+                    }
+                    
+                    button {
+                        width: 90%;
+                        font-size: 12px;
+                        &:first-child {
+                            margin-bottom: 20px;       
+                        }
+                    }
+                    
                 }
             }
         }
     }  
+
+    main {
+        .portfolio {
+            position: relative;
+            .backImg {
+                background-image: url('../images/background/back_portfolio_mobile.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position-x: 50%;
+                background-position-y: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }
+            .subhead {
+                font-size: 24px;
+            }
+            .lato_light_18 {
+                font-size: 14px;
+            }
+        }
+    }
 }
+
+
+
 
 // @extend .tplborder; ПРИМЕР

@@ -337,7 +337,10 @@ h1, h2, h3, h4, h5, h6 {
 header {
   width: 100%;
 }
-header nav {
+header .mobileNav {
+  display: none;
+}
+header .desctopNav {
   width: 100%;
   padding: 20px 38px;
   padding-top: 22px;
@@ -345,14 +348,14 @@ header nav {
   justify-content: center;
   background-color: #FFFFFF;
 }
-header nav .navigation {
+header .desctopNav .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-self: center;
   text-align: center;
 }
-header nav .navigation a {
+header .desctopNav .navigation a {
   opacity: 0.8;
   text-decoration: none;
   color: #000000;
@@ -363,7 +366,7 @@ header nav .navigation a {
   line-height: 19px;
   letter-spacing: 0.1em;
 }
-header nav .navigation a:first-child {
+header .desctopNav .navigation a:first-child {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 header .main_header {
@@ -395,6 +398,9 @@ header .main_header .main_header_block h2 {
 }
 header .main_header .main_header_block div {
   padding-bottom: 103px;
+}
+header .main_header .main_header_block div .mobileCall {
+  display: none;
 }
 
 main .portfolio {
@@ -1076,8 +1082,32 @@ footer .footer_wrapper .footer_menu .footer_menu_leftBlock span:hover, footer .f
 }
 
 @media screen and (max-width: 586px) {
-  header nav {
-    display: none !important;
+  header .desctopNav {
+    display: none;
+  }
+  header .mobileNav {
+    display: block;
+  }
+  header .mobileNav .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 12px;
+  }
+  header .mobileNav .navigation a {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+  }
+  header .mobileNav .navigation span {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
   }
   header .main_header {
     width: 100%;
@@ -1092,6 +1122,8 @@ footer .footer_wrapper .footer_menu .footer_menu_leftBlock span:hover, footer .f
   header .main_header .main_header_block .burgerImg {
     display: block;
     position: absolute;
+    width: 40px;
+    height: 40px;
     right: 20px;
     top: 20px;
   }
@@ -1102,10 +1134,10 @@ footer .footer_wrapper .footer_menu .footer_menu_leftBlock span:hover, footer .f
   header .main_header .main_header_block .logo {
     width: 100%;
     padding-top: 118px;
-    padding-bottom: 75px;
   }
   header .main_header .main_header_block .logo svg {
     width: 100%;
+    height: 19.375rem;
   }
   header .main_header .main_header_block h1 {
     font-size: 48px;
@@ -1114,22 +1146,47 @@ footer .footer_wrapper .footer_menu .footer_menu_leftBlock span:hover, footer .f
     -webkit-text-stroke: 0px #FFEDCC;
   }
   header .main_header .main_header_block h2 {
-    font-family: "Forum";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #FFEDCC;
-    text-shadow: none;
-    -webkit-text-stroke: 0px #FFEDCC;
-    opacity: 0.8;
+    font-size: 16px;
+    padding-top: 0;
   }
   header .main_header .main_header_block div {
+    width: 100%;
     padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header .main_header .main_header_block div .mobileCall {
+    display: block;
+  }
+  header .main_header .main_header_block div button {
+    width: 90%;
+    font-size: 12px;
+  }
+  header .main_header .main_header_block div button:first-child {
+    margin-bottom: 20px;
+  }
+  main .portfolio {
+    position: relative;
+  }
+  main .portfolio .backImg {
+    background-image: url("../images/background/back_portfolio_mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  main .portfolio .subhead {
+    font-size: 24px;
+  }
+  main .portfolio .lato_light_18 {
+    font-size: 14px;
   }
 }
 
