@@ -337,7 +337,10 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
-            img {
+            .burgerImg {
+                display: none;
+            }
+            .logo {
                 padding-bottom: 50px;
                 padding-top: 370px;
             }
@@ -1114,7 +1117,64 @@ footer {
 // МОБИЛЬНАЯ ВЕРСИЯ САЙТА 
 
 @media screen and (max-width: 586px) {
-    
+    header {
+        nav {
+            display: none !important;
+        }
+        .main_header {
+            width: 100%;
+            height: 100%;
+
+            .main_header_block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                .burgerImg { 
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .logo {
+                    width: 100%;
+                    padding-top: 118px;
+                    padding-bottom: 75px;
+                    svg {
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    font-size: 48px;
+                    text-align: center;
+                    text-shadow: none;
+                    -webkit-text-stroke: 0px #FFEDCC;
+                }
+                h2 {
+                    font-family: 'Forum';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 48px;
+                    line-height: 60px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.05em;
+                    color: #FFEDCC;
+                    text-shadow: none;
+                    -webkit-text-stroke: 0px #FFEDCC;
+                    opacity: 0.8;
+                }
+                div {
+                    padding-bottom: 36px;  
+                }
+            }
+        }
+    }  
 }
 
 // @extend .tplborder; ПРИМЕР
