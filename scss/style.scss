@@ -397,6 +397,9 @@ main {
                 }
             }
         }
+        .portfolio_img_mobile {
+            display: none;
+        }
         h4 {
             padding-bottom: 30px;
             padding-top: 60px;
@@ -1125,6 +1128,11 @@ footer {
 // МОБИЛЬНАЯ ВЕРСИЯ САЙТА 
 
 @media screen and (max-width: 586px) {
+
+    .fixed_icons {
+        display: none;
+    }
+
     header {
 
         .desctopNav {
@@ -1229,7 +1237,7 @@ footer {
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position-x: 50%;
-                background-position-y: 50%;
+                // background-position-y: 50%;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -1238,9 +1246,56 @@ footer {
             }
             .subhead {
                 font-size: 24px;
+                padding-top: 30px;
+                padding-bottom: 12px;
             }
             .lato_light_18 {
                 font-size: 14px;
+                padding-bottom: 12px;
+            }
+
+            .portfolio_img {
+                display: none;
+            }
+
+            .portfolio_img_mobile {
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+                .portfolio_img_flex {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    z-index: 999;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+
+            .portfolio_button {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding-bottom: 30px;
+                button {
+                    width: 100%;
+                    font-size: 12px;
+                    margin-left: 0;
+                }
+
+                .component18 {
+                    margin-left: 0 !important;
+                }
+            }
+
+            .slide_o_nas {
+                
             }
         }
     }
